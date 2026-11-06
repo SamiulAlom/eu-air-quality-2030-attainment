@@ -1,0 +1,4 @@
+pollutant,n_excluded,moved_only,method_change_only,both,with_break_year,with_met_match
+NO2,69,41,28,0,3,59
+PM10,641,29,606,6,32,538
+PM2.5,225,11,210,4,21,198

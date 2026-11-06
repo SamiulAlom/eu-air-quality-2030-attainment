@@ -1,0 +1,5 @@
+# Raw and intermediate data are downloaded by notebook 01 and never committed
+data/*
+!data/README.md
+__pycache__/
+.ipynb_checkpoints/

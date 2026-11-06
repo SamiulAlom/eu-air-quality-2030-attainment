@@ -1,0 +1,25 @@
+pollutant,step,n
+NO2,station x pollutant series with E1a data,3862
+NO2,excluded: no metadata,0
+NO2,excluded: not EU-27,0
+NO2,excluded: not a fixed measurement,17
+NO2,excluded: fewer than 8 good training years or 2023/2024 missing,1605
+NO2,excluded: station moved or method changed,69
+NO2,excluded: no qualifying ISD station within 50 km / 500 m,339
+NO2,included,1832
+PM10,station x pollutant series with E1a data,4090
+PM10,excluded: no metadata,0
+PM10,excluded: not EU-27,0
+PM10,excluded: not a fixed measurement,9
+PM10,excluded: fewer than 8 good training years or 2023/2024 missing,2042
+PM10,excluded: station moved or method changed,641
+PM10,excluded: no qualifying ISD station within 50 km / 500 m,230
+PM10,included,1168
+PM2.5,station x pollutant series with E1a data,2501
+PM2.5,excluded: no metadata,0
+PM2.5,excluded: not EU-27,0
+PM2.5,excluded: not a fixed measurement,3
+PM2.5,excluded: fewer than 8 good training years or 2023/2024 missing,1524
+PM2.5,excluded: station moved or method changed,225
+PM2.5,excluded: no qualifying ISD station within 50 km / 500 m,98
+PM2.5,included,651

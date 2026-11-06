@@ -1,0 +1,82 @@
+{
+ "notebooks/08_posthoc_diagnostics_CPU.ipynb": {
+  "session": "ps-j1-env-model-08-posthoc-diagnosti-20261105182515-6bf3",
+  "files": [
+   {
+    "file": "posthoc_by_origin.csv",
+    "sha256": "4665137d42b2feff675d41dd5473ccfd3fa1d79ced86d5344fce6280dda6f657"
+   },
+   {
+    "file": "posthoc_by_target_year.csv",
+    "sha256": "9d9cdf4b8e680d8e58487051165dfd30d4f23b625a77ae8c7da38a0095ac5187"
+   },
+   {
+    "file": "posthoc_diag_crps.csv",
+    "sha256": "4adcc91fb22129ac598eac450bf37b99a08f7893984aa07b0cc5e2133a0b39dd"
+   },
+   {
+    "file": "posthoc_diag_errors.csv",
+    "sha256": "e4ef7d84409b0ffeb24ca488d2976f26c130820433f62305de41012d77d536d7"
+   },
+   {
+    "file": "posthoc_diag_perfect_weather.csv",
+    "sha256": "654bcf4b08218ae3cdc0b3cfed182db08bbda351cdb18f482a52fb60d64f63f2"
+   },
+   {
+    "file": "posthoc_forecast_bands.csv",
+    "sha256": "e8230418950d1e0098bac9ce52adecbea0b1340d256173812d8722773df9b480"
+   },
+   {
+    "file": "posthoc_without_2020_2021.csv",
+    "sha256": "ece027e8649f6a446e753096254a8421145edd2c61f350e81f7b6aa0979789b4"
+   }
+  ],
+  "published": "2026-11-05T18:27:17.154Z"
+ },
+ "notebooks/09_exploratory_recalibration_CPU.ipynb": {
+  "session": "ps-j1-env-model-09-exploratory-recal-20261105144723-ae4a",
+  "files": [
+   {
+    "file": "exploratory_recal_coverage.csv",
+    "sha256": "34f95f7d1e46e92dabf33574412befd7a7138d27e67fe4a16911ed094b0621d7"
+   },
+   {
+    "file": "exploratory_recal_factors.csv",
+    "sha256": "d9557aa830e23383504a459e7774b982991ee21b7a489fbf2095320cec992c55"
+   },
+   {
+    "file": "exploratory_recal_summary.csv",
+    "sha256": "c0ba6c8da19ecedf030ee37793327b38fb0404cc753bcb9ea019f30c82a270b4"
+   }
+  ],
+  "published": "2026-11-05T14:49:55.254Z"
+ },
+ "notebooks/10_exclusion_audit_CPU.ipynb": {
+  "session": "ps-j1-env-model-10-exclusion-audit-c-20261105120427-49af",
+  "files": [
+   {
+    "file": "posthoc_exclusions_methods.csv",
+    "sha256": "420d5f516f09c4f0ca2539bc210f0965b95169dbf1e0bcea91bf15274d4fe72b"
+   },
+   {
+    "file": "posthoc_exclusions_summary.csv",
+    "sha256": "4e75852513872db3e147889f68b4922e4e2e54f2aa0428494d091d91409df4dd"
+   }
+  ],
+  "published": "2026-11-05T12:06:23.541Z"
+ },
+ "notebooks/11_mc_convergence_CPU.ipynb": {
+  "session": "ps-j1-env-model-11-mc-convergence-cp-20261105121356-1947",
+  "files": [
+   {
+    "file": "posthoc_mc_convergence.csv",
+    "sha256": "1cab753a85dbeb3c5ce21e4567b3465ca940846c7672da936845b24a2be64ca8"
+   },
+   {
+    "file": "posthoc_mc_convergence_rows.csv",
+    "sha256": "99b09746262dd424e7fcdc46f0bfa3c2c3b967bddc0e45249e502b4d7adb1f22"
+   }
+  ],
+  "published": "2026-11-05T12:46:51.272Z"
+ }
+}

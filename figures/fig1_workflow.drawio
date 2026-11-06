@@ -1,0 +1,242 @@
+<mxfile host="drawio" agent="Jack" version="24.0.0" type="device">
+  <diagram id="fig1" name="fig1_workflow">
+    <mxGraphModel dx="658" dy="500" grid="1" gridSize="4" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="658" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- canvas: double column, 658 px = 174 mm -->
+        <mxCell id="bg" value="" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="658" height="500" as="geometry" />
+        </mxCell>
+
+        <!-- ============ panel a: workflow strip ============ -->
+        <mxCell id="a_l" value="a" style="text;html=1;fontFamily=Arial;fontSize=14;fontStyle=1;fontColor=#000000;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="12" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="a_t" value="Workflow" style="text;html=1;fontFamily=Arial;fontSize=12;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="16" y="0" width="100" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- refit loop (dashed, above the strip) -->
+        <mxCell id="loop1" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#6B6B6B;strokeWidth=1;dashed=1;dashPattern=4 3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="52" as="sourcePoint" />
+            <mxPoint x="194" y="52" as="targetPoint" />
+            <Array as="points"><mxPoint x="610" y="28" /><mxPoint x="194" y="28" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loop2" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#6B6B6B;strokeWidth=1;dashed=1;dashPattern=4 3;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="318" y="28" as="sourcePoint" />
+            <mxPoint x="318" y="52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loop_l" value="refit at each origin" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#6B6B6B;spacing=0;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="140" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- stage 1: data -->
+        <mxCell id="d1" value="EEA E1a air quality" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="40" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="ISD-Lite weather" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="64" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="2030 limit values" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="88" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d_c" value="&lt;b&gt;3,651&lt;/b&gt; series" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="0" y="112" width="120" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- chevrons between stages -->
+        <mxCell id="ch1" value="" style="shape=step;perimeter=stepPerimeter;html=1;fixedSize=1;size=6;fillColor=#D9D9D9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="128" y="56" width="12" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ch2" value="" style="shape=step;perimeter=stepPerimeter;html=1;fixedSize=1;size=6;fillColor=#D9D9D9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="248" y="56" width="12" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ch3" value="" style="shape=step;perimeter=stepPerimeter;html=1;fixedSize=1;size=6;fillColor=#D9D9D9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="376" y="56" width="12" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ch4" value="" style="shape=step;perimeter=stepPerimeter;html=1;fixedSize=1;size=6;fillColor=#D9D9D9;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="544" y="56" width="12" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- stage 2: station model (central block, blue outline) -->
+        <mxCell id="m" value="Station model" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#E4ECF5;strokeColor=#004488;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="148" y="52" width="92" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="m_c" value="yearly levels &lt;i&gt;a&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;y&lt;/i&gt;&lt;/sub&gt;&lt;br&gt;weather effect &lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="136" y="112" width="116" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- stage 3: resampling -->
+        <mxCell id="r" value="Weather and residual resampling" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#E4ECF5;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="268" y="52" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="r_c" value="20 weather years&lt;br&gt;7-day residual blocks" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="260" y="112" width="116" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- stage 4: estimands (red) -->
+        <mxCell id="e" value="E1&amp;nbsp; &lt;i&gt;P&lt;/i&gt;(attain), 2024 level&lt;br&gt;E2&amp;nbsp; &lt;i&gt;P&lt;/i&gt;(attain), 2030 trend&lt;br&gt;E3&amp;nbsp; change for &lt;i&gt;P&lt;/i&gt; = 0.9&lt;br&gt;E5&amp;nbsp; variance split" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#BB5566;strokeWidth=1.5;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=8;spacingRight=6;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="396" y="40" width="140" height="68" as="geometry" />
+        </mxCell>
+
+        <!-- stage 5: rolling-origin hindcast (ochre) -->
+        <mxCell id="h" value="Rolling-origin hindcast" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#F8EDD0;strokeColor=#DDAA33;strokeWidth=1.5;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="564" y="52" width="92" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h_c" value="origins 2017–2023&lt;br&gt;&lt;i&gt;h&lt;/i&gt; = 1–6 yr&lt;br&gt;2025 check" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="558" y="112" width="100" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- ============ panel b: E1 for one station ============ -->
+        <mxCell id="b_l" value="b" style="text;html=1;fontFamily=Arial;fontSize=14;fontStyle=1;fontColor=#000000;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="184" width="12" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="b_t" value="E1 for one station" style="text;html=1;fontFamily=Arial;fontSize=12;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="16" y="184" width="200" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- inputs -->
+        <mxCell id="in_c" value="Daily concentration &lt;i&gt;C&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="212" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="in_w" value="Weather &lt;b&gt;W&lt;/b&gt;&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;, calendar &lt;b&gt;d&lt;/b&gt;&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="240" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_c" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="140" y="222" as="sourcePoint" /><mxPoint x="168" y="222" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="ar_w" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="140" y="250" as="sourcePoint" /><mxPoint x="168" y="250" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- station model band -->
+        <mxCell id="sm" value="" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;fillColor=#E4ECF5;strokeColor=#004488;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="168" y="212" width="488" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="sm_eq" value="log(&lt;i&gt;C&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt; + &lt;i&gt;c&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;) = &lt;i&gt;a&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;y&lt;/i&gt;(&lt;i&gt;t&lt;/i&gt;)&lt;/sub&gt; + &lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;(&lt;b&gt;W&lt;/b&gt;&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;, &lt;b&gt;d&lt;/b&gt;&lt;sub&gt;&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;) + &lt;i&gt;ε&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="216" width="268" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sm_l2" value="&lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;: gradient-boosted trees (LightGBM)" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#6B6B6B;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="180" y="236" width="268" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bf_l" value="backfitting" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#6B6B6B;spacing=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="214" width="184" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="bf_a" value="levels &lt;i&gt;a&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;y&lt;/i&gt;&lt;/sub&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;fillColor=#FFFFFF;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="232" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bf_f" value="&lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;fillColor=#FFFFFF;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="588" y="232" width="56" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bf_1" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#6B6B6B;strokeWidth=1;dashed=1;dashPattern=4 3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="540" y="238" as="sourcePoint" /><mxPoint x="588" y="238" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="bf_2" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#6B6B6B;strokeWidth=1;dashed=1;dashPattern=4 3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="588" y="246" as="sourcePoint" /><mxPoint x="540" y="246" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- products of the station model -->
+        <mxCell id="ar_lv" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="224" y="260" as="sourcePoint" /><mxPoint x="224" y="284" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="v01" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="176" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v02" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="184" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v03" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="192" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v04" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="200" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v05" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="208" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v06" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="216" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v07" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="224" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v08" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="232" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v09" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="240" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v10" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="248" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v11" value="" style="rounded=0;html=1;fillColor=#BCD0E6;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="256" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v12" value="" style="rounded=0;html=1;fillColor=#004488;strokeColor=#FFFFFF;strokeWidth=1;" vertex="1" parent="1"><mxGeometry x="264" y="284" width="8" height="8" as="geometry" /></mxCell>
+        <mxCell id="v_l" value="&lt;i&gt;â&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;y&lt;/i&gt;&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="278" y="280" width="28" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_as" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="268" y="292" as="sourcePoint" /><mxPoint x="268" y="340" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="as_l" value="&lt;i&gt;a&lt;/i&gt;&lt;sup&gt;*&lt;/sup&gt; = &lt;i&gt;â&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,2024&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="188" y="300" width="76" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_f" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="312" y="260" as="sourcePoint" /><mxPoint x="312" y="340" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="f_l" value="&lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="316" y="300" width="20" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_e" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="412" y="260" as="sourcePoint" /><mxPoint x="412" y="340" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="e_l" value="residuals &lt;i&gt;ε&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="416" y="300" width="84" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- weather years from the observed weather -->
+        <mxCell id="ar_wy" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="116" y="260" as="sourcePoint" /><mxPoint x="116" y="344" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- repeat frame: for each weather year -->
+        <mxCell id="fr" value="" style="rounded=0;html=1;fillColor=none;strokeColor=#BDBDBD;strokeWidth=1;dashed=1;dashPattern=4 3;" vertex="1" parent="1">
+          <mxGeometry x="80" y="324" width="540" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="fr_l" value="for each weather year &lt;i&gt;w&lt;/i&gt; in the 2005–2024 pool" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#6B6B6B;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="88" y="400" width="280" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="sh3" value="" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="344" width="40" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sh2" value="" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="96" y="348" width="40" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sh1" value="&lt;i&gt;w&lt;/i&gt;" style="rounded=0;html=1;fillColor=#FFFFFF;strokeColor=#4D4D4D;strokeWidth=1;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="92" y="352" width="40" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_sa" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="132" y="366" as="sourcePoint" /><mxPoint x="168" y="366" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="A" value="&lt;i&gt;a&lt;/i&gt;&lt;sup&gt;*&lt;/sup&gt; + &lt;i&gt;f&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;&lt;/sub&gt;(&lt;b&gt;W&lt;/b&gt;&lt;sub&gt;&lt;i&gt;w&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;, &lt;b&gt;d&lt;/b&gt;&lt;sub&gt;&lt;i&gt;w&lt;/i&gt;,&lt;i&gt;t&lt;/i&gt;&lt;/sub&gt;)&lt;br&gt;&lt;font color=&quot;#6B6B6B&quot;&gt;every day of year &lt;i&gt;w&lt;/i&gt;&lt;/font&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#E4ECF5;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=6;spacingRight=6;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="168" y="340" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_ab" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="328" y="366" as="sourcePoint" /><mxPoint x="356" y="366" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="B" value="+ 7-day residual&lt;br&gt;blocks&lt;br&gt;&lt;font color=&quot;#6B6B6B&quot;&gt;same season, tercile&lt;/font&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#E4ECF5;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=4;spacingRight=4;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="356" y="340" width="112" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_bc" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#4D4D4D;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="468" y="366" as="sourcePoint" /><mxPoint x="496" y="366" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="C" value="Simulated year&lt;br&gt;annual mean,&lt;br&gt;days &amp;gt; daily limit" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#E4ECF5;strokeColor=none;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=4;spacingRight=4;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="496" y="340" width="112" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- outputs (red from here on) -->
+        <mxCell id="ar_ce" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#BB5566;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="552" y="392" as="sourcePoint" /><mxPoint x="552" y="448" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="E1" value="&lt;font color=&quot;#BB5566&quot;&gt;E1&lt;/font&gt; = &lt;i&gt;P&lt;/i&gt;(attain | &lt;i&gt;a&lt;/i&gt;&lt;sup&gt;*&lt;/sup&gt; = &lt;i&gt;â&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,2024&lt;/sub&gt;)&lt;br&gt;share of simulated years that attain&lt;br&gt;&lt;font color=&quot;#6B6B6B&quot;&gt;5–95%: uncertainty of &lt;i&gt;â&lt;/i&gt;&lt;sub&gt;&lt;i&gt;s&lt;/i&gt;,2024&lt;/sub&gt;&lt;/font&gt;" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#BB5566;strokeWidth=1.5;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=8;spacingRight=6;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="424" y="448" width="196" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ar_e4" value="" style="html=1;endArrow=block;endFill=1;endSize=5;strokeColor=#BB5566;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="424" y="474" as="sourcePoint" /><mxPoint x="388" y="474" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="E4" value="E4&amp;nbsp; weather-marginal&lt;br&gt;0.1 &amp;lt; E1 &amp;lt; 0.9" style="rounded=1;absoluteArcSize=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#BB5566;strokeWidth=1.5;fontFamily=Arial;fontSize=11;fontColor=#222222;spacing=0;spacingLeft=8;spacingRight=6;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="192" y="456" width="196" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- side note: E2 and E3 change only the level input -->
+        <mxCell id="note" value="E2: &lt;i&gt;a&lt;/i&gt;&lt;sup&gt;*&lt;/sup&gt; = 2030 trend level&lt;br&gt;E3: &lt;i&gt;a&lt;/i&gt;&lt;sup&gt;*&lt;/sup&gt; + grid of log shifts" style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#6B6B6B;spacing=0;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="0" y="458" width="168" height="32" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
